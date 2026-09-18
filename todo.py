@@ -10,11 +10,12 @@ def add_task(name):
         return
     tasks.append(name)
 def show_tasks():
+ feature/delete-task
     print(f"=== To-Do List ({len(tasks)} remaining) ===")
-    for i, t in enumerate(tasks, 1):
-        print(f"{i}. {t}")
+
 
 def main():
+    add_task("Learn Git")
     add_task("Learn Git")
     show_tasks()
     delete_task("Learn Git")
